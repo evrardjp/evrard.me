@@ -15,7 +15,7 @@ Networking modules were a big thing this release.
 So big, it's easy to overlook the rest.
 Here are, in my opinion, many other things worth glancing over for 2.3 (discovered from commits, or from the [changelog][changelog]):
 
-* ``ansible_user`` [doesn't work anymore][1] if you don't have a variable explicitly set (depends on your connection plugin). If you have facts gathered, you may want to use ```ansible_user_id```. This has already been fixed and will be reverted in next version.
+* ``ansible_user`` [doesn't work anymore][1] if you don't have a variable explicitly set (depends on your connection plugin). If you have facts gathered, you may want to use ```ansible_user_id```. This bug has already been fixed in the 2.3 branch and will probably be shipped in version 2.3.0.1
 * [Vars precedence and inheritence][7] have changed. Please have a look at the docs for variable precedence. I have to test if it broke my ``vars_plugins``.
 * module_utils for custom modules can be shipped with roles. \o/
 * a ```passwordstore``` lookup was introduced (see also passwordstore.org). Maybe it was there before, but I can't remember it, and I love it.
