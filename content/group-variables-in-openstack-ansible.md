@@ -120,7 +120,7 @@ Example:
 Or even better, if you want to add the cinder config list on top of the
 existing ones:
 
-    lxc_container_config_list: >-
+    lxc_container_config_list: |-
       {% set config_list =  [] %}
       {% set _ = config_list.extend(others_lxc_container_config_list) %}
       {% if 'cinder_api' in group_names %}
