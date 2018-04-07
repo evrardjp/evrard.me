@@ -17,6 +17,7 @@ TIMEZONE = 'Europe/London'
 DEFAULT_LANG = u'en'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ATOM = 'feeds/atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -27,8 +28,12 @@ THEME = 'themes/JustRead'
 USERNAME = 'evrardjp'
 LINKEDIN_URL = 'https://www.linkedin.com/in/' + USERNAME
 GITHUB_URL = 'https://github.com/' + USERNAME
-SOCIAL = (('LinkedIn', LINKEDIN_URL),
-          ('Github', GITHUB_URL),)
+SOCIAL = (
+    ('', LINKEDIN_URL),
+    ('', GITHUB_URL),
+    ('', 'https://twitter.com/evrardjp'),
+    ('', 'https://evrard.me/feeds/all.atom.xml'),
+)
 # LINKS = (('Pelican', 'http://getpelican.com/'),
 #          ('Python.org', 'http://python.org/'),
 #          ('Jinja2', 'http://jinja.pocoo.org/'))
