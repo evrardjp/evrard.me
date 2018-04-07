@@ -1,0 +1,3 @@
+[submodule "plugins/deadlinks"]
+	path = plugins/deadlinks
+	url = https://github.com/silentlamb/pelican-deadlinks.git

@@ -19,23 +19,27 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'))
+# Uncomment following line if you want document-relative URLs when developing
+RELATIVE_URLS = True
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'))
-
-# Social widget
+# Themes config
+THEME = 'themes/JustRead'
 USERNAME = 'evrardjp'
 LINKEDIN_URL = 'https://www.linkedin.com/in/' + USERNAME
 GITHUB_URL = 'https://github.com/' + USERNAME
 SOCIAL = (('LinkedIn', LINKEDIN_URL),
           ('Github', GITHUB_URL),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'))
 
-DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# Plugins config
+PLUGIN_PATHS = ['plugins']
+PLUGINS = [
+    'deadlinks',
+    'tag_cloud',
+]
+## Deadlinks
+DEADLINK_OPTS = {
+    'timeout_is_error':    True,
+}

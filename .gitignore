@@ -1,8 +1,10 @@
-Makefile
+.DS_Store
+#Makefile
 /cache
-develop_server.sh
-fabfile.py
+#develop_server.sh
+#fabfile.py
 /output
 *.pyc
-publishconf.py
-.DS_Store
+#publishconf.py
+pelican.pid
+srv.pid

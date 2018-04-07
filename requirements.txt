@@ -10,3 +10,5 @@ python-dateutil==2.5.3
 pytz==2016.6.1
 six==1.10.0
 Unidecode==0.4.19
+bs4==0.0.1
+beautifulsoup4==4.6.0
