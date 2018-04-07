@@ -276,14 +276,7 @@ header{
 		text-decoration: none;
 		// The 3d effect is kind of silly, so go ahead and delete the following lines xD
 		text-shadow:
-			0 1px 0 lighten(@black, 70%),
-			0 2px 0 lighten(@black, 60%),
-			0 3px 0 lighten(@black, 50%),
-			0 4px 0 lighten(@black, 40%),
-			0 5px 0 lighten(@black, 30%),
-			0 6px 0 lighten(@black, 20%),
-			0px 7px 0 lighten(@black, 10%),
-			0 8px 7px lighten(@black, 5%);
+			0 1px 0 lighten(@black, 70%);
 
 				&:hover{
 					color: @white;
@@ -345,6 +338,7 @@ p[role="contentinfo"]{
 .social a[href*='linkedin.com']:before      {content: url('../images/icons/linkedin.png'); .icon;}
 .social a[href*='quora.com']:before         {content: url('../images/icons/quora.png'); .icon;}
 .social a[href*='rss.xml']:before           {content: url('../images/icons/rss.png'); .icon;}
+.social a[href*='atom.xml']:before          {content: url('../images/icons/rss.png'); .icon;}
 .social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverflow.png'); .icon;}
 .social a[href*='twitter.com']:before       {content: url('../images/icons/twitter.png'); .icon;}
 .social a[href*='youtube.com']:before       {content: url('../images/icons/youtube.png'); .icon;}
