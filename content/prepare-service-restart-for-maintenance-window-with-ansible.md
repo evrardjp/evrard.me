@@ -1,7 +1,6 @@
 Title: Orchestrate a service restart during a maintenance window with ansible
 Date: 2016-06-18 16:39
-Category: ansible
-Tags: ansible, service orchestration
+Tags: ansible
 Status: published
 Summary: Ansible - Orchestrate changes to restart a service later
 

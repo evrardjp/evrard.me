@@ -1,7 +1,6 @@
 Title: My view on Ansible 2.3 release notes
 Date: 2017-04-21 23:28
-Category: ansible
-Tags: ansible, release
+Tags: ansible
 Status: published
 Summary: WHOA, a lot of changes in this release. Again.
 

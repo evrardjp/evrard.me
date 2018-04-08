@@ -1,7 +1,6 @@
 Title: Usage of ansible local facts
 Date: 2017-08-05 20:06
-Category: ansible
-Tags: ansible, facts
+Tags: ansible
 Status: published
 Summary: Drill down into facts.d usage
 

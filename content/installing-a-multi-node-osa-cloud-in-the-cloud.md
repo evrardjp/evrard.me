@@ -1,7 +1,6 @@
-Title: Installing an OpenStack-Ansible cloud in the cloud: A multi-node OpenStack-Ansible deploy guide
+Title: Installing an OpenStack-Ansible multi-node cloud in the cloud
 Date: 2016-12-29 15:22
-Category: ansible
-Tags: ansible, openstack
+Tags: openstack-ansible
 Status: published
 Summary: It isn't difficult to build your own openstack-cloud with a distributed in cloud control plane.
 

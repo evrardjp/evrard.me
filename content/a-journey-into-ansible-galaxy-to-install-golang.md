@@ -1,7 +1,6 @@
 Title: ansible-galaxy, my journey to install golang
 Date: 2016-10-02 09:22
-Category: ansible
-Tags: ansible, galaxy
+Tags: ansible
 Status: published
 Summary: Finding a proper role in ansible-galaxy is painful
 

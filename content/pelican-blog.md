@@ -1,7 +1,6 @@
 Title: Auto deployment of Pelican webpages to github user pages
 Date: 2016-06-05 22:30
-Category: python
-Tags: pelican, publishing, tox
+Tags: python, blog
 Status: published
 Summary: Here is how I build my static website using tox and pelican
 
