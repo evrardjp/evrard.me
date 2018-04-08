@@ -86,7 +86,10 @@
 	<div class="wrapper pages">
 		<ul class="nav">
 		{% for p in pages %}
-			<li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+			<li><a href="{{ SITEURL }}/{{ p.url }}">
+				{% if p.menu_title is defined %}{{ p.menu_title }}
+				{% else %}{{ p.title }}{% endif %}
+			</a></li>
 		{% endfor %}
 			<li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
 		</ul>
