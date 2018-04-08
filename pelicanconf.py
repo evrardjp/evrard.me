@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
+import glob
+import yaml
+
 
 AUTHOR = u'Jean-Philippe Evrard'
 COPYRIGHT = AUTHOR
@@ -53,3 +57,12 @@ DEADLINK_VALIDATION = True
 DEADLINK_OPTS = {
     "classes": ['deadlink'],
 }
+## Comments with Staticman
+STATICMAN_COMMENTS = False
+COMMENTS_PATH = "./content/comments"
+
+def loadyamlcomment(file):
+    with open(file) as stream:
+        return yaml.load(stream)
+
+COMMENTS = [loadyamlcomment(f) for f in glob.glob(COMMENTS_PATH + '/*.yml')]

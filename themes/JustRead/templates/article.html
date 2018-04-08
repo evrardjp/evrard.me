@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block content %}
-<div role="main" class="content clearfix">	
+<div role="main" class="content clearfix">
 	<article>
 		<div class="post wrapper">
 			<h1>{{ article.title }}</h1>
 			{{ article.content }}
-			
+
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ TWITTER_USERNAME }}" data-lang="en" data-size="large" data-related="{{ TWITTER_USERNAME }}">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						
+
 			{% if DISQUS_SITENAME %}
 			<div class="comments">
 			<h2>Comments !</h2>
@@ -23,10 +23,29 @@
 			      })();
 			    </script>
 			</div>
-			{% endif %}			
+			{% endif %}
+
+			{% if STATICMAN_COMMENTS %}
+			<div class="comments">
+			<h2>Comments !</h2>
+	        {% for comment in COMMENTS %}
+	            {% if comment.url == article.slug %}
+	                <p class="comment">{{ comment.name }}: {{ comment.message }}</p>
+	            {% endif %}
+	        {% endfor %}
+	        <form method="POST" action="https://api.staticman.net/v2/entry/evrard/evrard.me/master/comments">
+	            <input name="options[redirect]" type="hidden" value="{{ SITEURL }}/{{ article.slug }}">
+	            <input name="fields[url]" type="hidden" value="{{ article.slug }}">
+	            <div><label>Name: <input name="fields[name]" type="text"></label></div>
+	            <div><label>E-mail: <input name="fields[email]" type="email"></label></div>
+	            <div><label>Message: <textarea name="fields[message]"></textarea></label></div>
+	            <button type="submit">Submit</button>
+	        </form>
+			</div>
+			{% endif %}
 		</div>
-	
+
 	{% include 'metadata.html' %}
-	</article>	
+	</article>
 </div>
 {% endblock %}
