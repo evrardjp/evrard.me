@@ -98,6 +98,6 @@ Even basic roles that should be properly done are done in a terrible way. IMO, R
 
 [ansible-galaxy]: https://galaxy.ansible.com
 [transfer.sh]: https://github.com/dutchcoders/transfer.sh/
-[evrardjp-golang-role]: https://github.com/evrardjp/ansible-golang/
+[evrardjp-golang-role]: https://github.com/evrardjp/ansible-go/
 [pr-to-initial-role]: https://github.com/jlund/ansible-go/pull/28
 [evrardjp-golang-role-galaxy]: https://galaxy.ansible.com/evrardjp/golang/

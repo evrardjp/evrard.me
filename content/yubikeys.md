@@ -62,14 +62,14 @@ it (or one of its alternatives).
 
 [dev.yubico]: https://developers.yubico.com/
 [yubikey 4]: http://yubi.co/4
-[yubikey neo]: http://yubi.co/neo
+[yubikey neo]: https://www.yubico.com/products/yubikey-hardware/yubikey-neo/
 [yubico-start]: https://www.yubico.com/start/
 [yubico-pt]: https://www.yubico.com/pt
 [yubico-pt-page]: https://www.yubico.com/products/services-software/personalization-tools/
 [generic-hotp]: https://www.yubico.com/products/services-software/personalization-tools/oath/
-[ssh-cert]: https://www.yubico.com/why-yubico/for-individuals/computer-login/yubikey-neo-and-piv/
+[ssh-cert]: https://developers.yubico.com/PIV/Guides/SSH_with_PIV_and_PKCS11.html
 [piv-slots]: https://developers.yubico.com/PIV/Introduction/Certificate_slots.html
-[1]: https://derekriemer.com/node/25
+[1]: https://derekriemer.com/2017/02/11/how-i-rolled-two-factor-authentication-for-ssh-access-to-the-server-that-powers-this-site/
 [2]: http://delyan.me/securing-ssh-with-totp/
 [3]: https://www.100tb.com/blog/ssh-two-factor-authentication-with-totp-in-debianubuntu/
 [4]: http://strugglers.net/~andy/blog/2016/05/06/using-a-totp-app-for-multi-factor-ssh-auth/
