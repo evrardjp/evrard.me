@@ -4,7 +4,7 @@ My view on Ansible 2.5
 :date: 2018-04-08
 :tags: ansible
 :status: published
-:summary: Quite a few interesting changes in Ansible 2.5
+:summary: Quite a few interesting changes in Ansible 2.5.
 
 Ansible 2.5 was released last month.
 
@@ -53,6 +53,9 @@ Here is what I like and don't like about this release:
 * A ``vdo`` module was added. If you want to know more about it,
   check out this page for `VDO install`_, and for checking
   the `VDO benefits`_.
+
+*I'd like to add a big thanks to ricardocarillocruz, gundalow, and bcoca for their
+help on irc!*
 
 .. _ansible 2.5 release notes: https://www.ansible.com/blog/ansible-2.5-traveling-space-and-time
 .. _ansible 2.5 changelog: https://github.com/ansible/ansible/blob/devel/CHANGELOG.md#2.5
