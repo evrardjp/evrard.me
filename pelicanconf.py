@@ -59,7 +59,7 @@ DEADLINK_OPTS = {
     "classes": ['deadlink'],
 }
 ## Comments with Staticman
-STATICMAN_COMMENTS = False
+STATICMAN_COMMENTS = True
 COMMENTS_PATH = "./content/comments"
 
 def loadyamlcomment(file):
