@@ -45,6 +45,7 @@ PLUGINS = [
     'tag_cloud',
 ]
 ## Deadlinks
+DEADLINK_VALIDATION = True
 DEADLINK_OPTS = {
-    'timeout_is_error':    True,
+    "classes": ['deadlink'],
 }
