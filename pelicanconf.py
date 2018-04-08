@@ -26,17 +26,21 @@ RELATIVE_URLS = True
 # Themes config
 THEME = 'themes/JustRead'
 USERNAME = 'evrardjp'
+TWITTER_USERNAME = USERNAME
+TWITTER_URL = 'https://twitter.com/' + TWITTER_USERNAME
 LINKEDIN_URL = 'https://www.linkedin.com/in/' + USERNAME
 GITHUB_URL = 'https://github.com/' + USERNAME
 SOCIAL = (
     ('', LINKEDIN_URL),
     ('', GITHUB_URL),
-    ('', 'https://twitter.com/evrardjp'),
+    ('', TWITTER_URL),
     ('', 'https://evrard.me/feeds/all.atom.xml'),
 )
 # LINKS = (('Pelican', 'http://getpelican.com/'),
 #          ('Python.org', 'http://python.org/'),
 #          ('Jinja2', 'http://jinja.pocoo.org/'))
+
+FOOTERTEXT = '<a href="pages/license.html">© 2017 %s</a>' % (AUTHOR)
 
 # Plugins config
 PLUGIN_PATHS = ['plugins']
