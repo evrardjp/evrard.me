@@ -53,7 +53,8 @@ PLUGINS = [
     'tag_cloud',
 ]
 ## Deadlinks
-DEADLINK_VALIDATION = True
+if os.environ.get('DEADLINK_VALIDATION', True) != "False":
+    DEADLINK_VALIDATION = True
 DEADLINK_OPTS = {
     "classes": ['deadlink'],
 }
