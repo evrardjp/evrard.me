@@ -5,7 +5,7 @@ Switching to the new gandi mail service
 :tags: hosting
 :status: published
 :slug: opinion-on-new-gandi-email
-:summary: I welcome these Gandi email service changes, but the web interface is plagued by issues.
+:summary: I welcome the Gandi email service changes, but the web interface is plagued by issues.
 
 If you are a Gandi customer, you probably already know they offer an email service.
 What you might have missed, is Gandi's services refactor to be more modern.
