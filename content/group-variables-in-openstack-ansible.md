@@ -166,6 +166,6 @@ probably bring changes improving things even further...
 [1]: https://review.openstack.org/#/c/466379/
 [2]: https://review.openstack.org/#/c/445447/
 [3]: https://review.openstack.org/#/c/445437/
-[4]: https://docs.openstack.org/openstack-ansible/latest/contributor/inventory-and-vars.html#variable-precedence
+[4]: https://docs.openstack.org/openstack-ansible/pike/contributor/inventory-and-vars.html#variable-precedence
 [5]: https://github.com/openstack/openstack-ansible/blob/73ee3eb9ae18add9c5c8a7872b736dddb129d8ce/playbooks/inventory/group_vars/all_containers.yml#L18-L19
 [6]: https://github.com/openstack/openstack-ansible-lxc_container_create/blob/258dad41ced7f9511d4e388470a759f46d9509fa/tasks/container_create.yml#L143-L153
