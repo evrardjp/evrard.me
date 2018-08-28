@@ -614,12 +614,11 @@ p,
 }
 @media screen and (min-width: 55.5em) {
   pre,
-  .post p,
-  .post > p,
-  .post blockquote,
-  .post ul,
-  .post ol {
-    width: 66.66666667%;
+  .post{
+    width: 75%;
+  }
+  .post ul, .post ol {
+    margin-left: 1em;
   }
   .main {
     float: none;
@@ -696,11 +695,8 @@ p,
     font-size: 14px;
   }
   pre,
-  .post > p,
-  .post blockquote,
-  .post ul,
-  .post ol {
-    width: 60%;
+  .post {
+    width: 75%;
   }
 }
 @media screen and (min-width: 130em) {
