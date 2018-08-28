@@ -33,6 +33,7 @@
 	                <p class="comment">{{ comment.name }}: {{ comment.message }}</p>
 	            {% endif %}
 	        {% endfor %}
+                <div class="commentform">
 	        <form method="POST" action="https://api.staticman.net/v2/entry/evrardjp/evrard.me/master/comments">
 	            <input name="options[redirect]" type="hidden" value="{{ SITEURL }}/{{ article.slug }}">
 	            <input name="fields[url]" type="hidden" value="{{ article.slug }}">
@@ -41,6 +42,7 @@
 	            <div><label>Message: <textarea name="fields[message]"></textarea></label></div>
 	            <button type="submit">Submit</button>
 	        </form>
+                </div>
 			</div>
 			{% endif %}
 		</div>

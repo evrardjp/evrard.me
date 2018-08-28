@@ -17,7 +17,7 @@ Flexibility and extensibility
 `LOCI`_ is relying on passing arguments to the Docker image building for its flexibility.
 It requires you to pass at least the "PROJECT" as CLI argument, to tell which OpenStack project you want to build.
 
-The other parameters are optional. You can pass a base image as starting point (FROM) in argument if you do not want to build from the ubuntu base image.
+The other parameters are optional. You can pass a base image as starting point (``FROM``) in argument if you do not want to build from the ubuntu base image.
 Other variables can be provided, like your personal pip 'links' web mirror, or proxy settings.
 
 The image building's shell scripts receives the appropriate arguments as environment variables.
@@ -28,20 +28,20 @@ The build process
 
 The build process currently behaves like this:
 
-1) *python* and *virtualenv* are installed on the base image, using distribution packages.
-2) A system user is created for the project.
-3) *virtualenv* is upgraded, unconstrained, in a virtualenv. I suppose if you want to have fully reproducible builds with no surprise on the virtualenv version, you could implement a bypass using a docker build argument.
-4) *pip* get installed in previous virtualenv, unconstrained again. Previous comment applies here.
-5) The *bindep* pip package and extra pip packages based on the project + profile (coming from a *pydep.txt* file at the root of the LOCI repo) are installed.
+1. *python* and *virtualenv* are installed on the base image, using distribution packages.
+2. A system user is created for the project.
+3. *virtualenv* is upgraded, unconstrained, in a virtualenv. I suppose if you want to have fully reproducible builds with no surprise on the virtualenv version, you could implement a bypass using a docker build argument.
+4. *pip* get installed in previous virtualenv, unconstrained again. Previous comment applies here.
+5. The *bindep* pip package and extra pip packages based on the project + profile (coming from a *pydep.txt* file at the root of the LOCI repo) are installed.
 
    If a wheel built image was created, its upper constraints file is used for the installation of those ``pydeps`` + *bindep* pip packages.
    These packages are installed in a binary form (only), from your pip mirror of choice.
 
    If no pip mirror can be trusted, it would be technically possible to implement a bypass by having an argument that flips the ``--only-binary`` parameter to ``--no-binary``, and copying your own constraints file.
-6) The destination project is cloned with the user provided reference (default is master branch's HEAD).
-7) The destination project, and any extra *PIP_PACKAGES* (should *PIP_PACKAGES* be not empty), are installed based on projects' *setup()* content.
-8) Distribution packages are installed at this point using *bindep.txt* file.
-9) Cleanup of installed distro packages (and other extra artifacts) happen, and allows the system to use global packages.
+6. The destination project is cloned with the user provided reference (default is master branch's HEAD).
+7. The destination project, and any extra *PIP_PACKAGES* (should *PIP_PACKAGES* be not empty), are installed based on projects' *setup()* content.
+8. Distribution packages are installed at this point using *bindep.txt* file.
+9. Cleanup of installed distro packages (and other extra artifacts) happen, and allows the system to use global packages.
 
 Security and reproducibility
 ----------------------------
