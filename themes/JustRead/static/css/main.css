@@ -614,6 +614,7 @@ p,
 }
 @media screen and (min-width: 55.5em) {
   pre,
+  .post p,
   .post > p,
   .post blockquote,
   .post ul,
