@@ -2,6 +2,7 @@ Switching to the new gandi mail service
 #######################################
 
 :date: 2018-04-22
+:modified: 2018-08-28 11:53
 :tags: hosting
 :status: published
 :slug: opinion-on-new-gandi-email
@@ -42,15 +43,15 @@ Next to that, configure CalDAV/CardDAV records for the DAV clients:
 
 .. code-block:: text
 
-    imap            IN CNAME access.mail.gandi.net.
-    pop             IN CNAME access.mail.gandi.net.
-    smtp            IN CNAME relay.mail.gandi.net.
-    _caldavs._tcp   IN SRV 10 1 443 sogo3.gandi.net.
-    _carddavs._tcp  IN SRV 10 1 443 sogo3.gandi.net.
-    _imaps._tcp     IN SRV 10 1 993 mail.gandi.net.
-    _submission     IN SRV 10 1 587 mail.gandi.net.
-    _caldavs._tcp   IN TXT "path=/SOGo/dav/"
-    _carddavs._tcp  IN TXT "path=/SOGo/dav/"
+    imap              IN CNAME access.mail.gandi.net.
+    pop               IN CNAME access.mail.gandi.net.
+    smtp              IN CNAME relay.mail.gandi.net.
+    _caldavs._tcp     IN SRV 10 1 443 sogo3.gandi.net.
+    _carddavs._tcp    IN SRV 10 1 443 sogo3.gandi.net.
+    _imaps._tcp       IN SRV 10 1 993 mail.gandi.net.
+    _submission._tcp  IN SRV 10 1 587 mail.gandi.net.
+    _caldavs._tcp     IN TXT "path=/SOGo/dav/"
+    _carddavs._tcp    IN TXT "path=/SOGo/dav/"
 
 With all those records set, it should be easy for SOGo clients to work with your domain,
 if they respect RFCs like the `RFC6764`_.
