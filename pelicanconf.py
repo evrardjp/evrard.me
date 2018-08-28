@@ -10,7 +10,6 @@ AUTHOR = u'Jean-Philippe Evrard'
 COPYRIGHT = AUTHOR
 SITENAME = u'dd if=/dev/brain of=/var/log/this.site'
 SITEURL = 'https://evrard.me'
-GOOGLE_ANALYTICS = "UA-79230364-1"
 
 PATH = 'content'
 
@@ -44,7 +43,7 @@ SOCIAL = (
 #          ('Python.org', 'http://python.org/'),
 #          ('Jinja2', 'http://jinja.pocoo.org/'))
 
-FOOTERTEXT = '<a href="pages/license.html">© 2017 %s</a>' % (AUTHOR)
+FOOTERTEXT = '<a href="%s/pages/license.html">© 2017 %s</a>' % (SITEURL, AUTHOR)
 
 # Plugins config
 PLUGIN_PATHS = ['plugins']

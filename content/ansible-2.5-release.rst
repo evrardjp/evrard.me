@@ -58,7 +58,7 @@ Here is what I like and don't like about this release:
 help on irc!*
 
 .. _ansible 2.5 release notes: https://www.ansible.com/blog/ansible-2.5-traveling-space-and-time
-.. _ansible 2.5 changelog: https://github.com/ansible/ansible/blob/devel/CHANGELOG.md#2.5
+.. _ansible 2.5 changelog: https://github.com/ansible/ansible/blob/e8beb180e15eff1f54e0ac8a5a5143639794bbdc/CHANGELOG.md#2.5
 .. _ansible 2.5 porting guide: https://docs.ansible.com/ansible/devel/porting_guides/porting_guide_2.5.html
 .. _in 2.5: http://docs.ansible.com/ansible/2.5/modules/stat_module.html
 .. _in 2.4: http://docs.ansible.com/ansible/2.4/stat_module.html

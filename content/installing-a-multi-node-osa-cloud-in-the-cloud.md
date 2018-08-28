@@ -222,7 +222,7 @@ Building overlays accross multiple datacenters/clouds is quite easy, and work by
 
 [ansible-dynamic-inventory]: http://docs.ansible.com/ansible/intro_dynamic_inventory.html
 [ansible-aws-dynamic-inventory]: https://raw.github.com/ansible/ansible/devel/contrib/inventory/ec2.py
-[ansible-openstack-dynamic-inventory]: https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/openstack.py
+[ansible-openstack-dynamic-inventory]: https://raw.githubusercontent.com/ansible/ansible/89ce826a9fb53c304238923a73667ab820711338/contrib/inventory/openstack_inventory.py
 [evrardjp-github-osa-cloud-multinode]: https://github.com/evrardjp/osa-cloud-multinode.git
 [osa]: https://github.com/openstack/openstack-ansible
 [bootstrap-host]: https://github.com/openstack/openstack-ansible/tree/master/tests/roles/bootstrap-host
