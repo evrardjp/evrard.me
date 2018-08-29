@@ -23,6 +23,8 @@ Other variables can be provided, like your personal pip 'links' web mirror, or p
 The image building's shell scripts receives the appropriate arguments as environment variables.
 Many shell scripts do not need any updating to leverage this flexibility. If your use case is not met, I doubt it would be a problem to change the scripts to adapt your use case.
 
+On top of that, you can of course build a child image to your needs.
+
 The build process
 -----------------
 
@@ -49,8 +51,9 @@ Security and reproducibility
 While I did not have the chance to do a thorough security review, here is my opinion:
 The "requirements" building, while optional, is in my opinion necessary for security.
 
-The project builds wheels for all the openstack requirements' upper-constraints in your environment, which can then be published in a secure location for your next project building.
-If you do not build those, there is no reason to think you will pass the constraints file that is matching upstream OpenStack version. Therefore you are probably using anything from PyPI matching the project's requirements, which can be very variable.
+`LOCI`_ can build wheels for all the openstack requirements' upper-constraints in your environment, which can then be published in a secure location for your next project building. It means you would rely on OpenStack security team's work, which would
+eventually update the requirements/constraints of an upstream project by blacklisting an insecure python package.
+If you do not build the wheels with the *LOCI requirements* project, there is no reason to think you will pass a constraints file matching your OpenStack projects versions. Therefore, you are probably using anything from PyPI matching each project's requirements, which can be very variable.
 
 Build speed
 -----------
