@@ -3,7 +3,7 @@ blinker==1.4
 bs4==0.0.1
 certifi==2019.6.16
 chardet==3.0.4
-docutils==0.15.post1
+docutils==0.15.1
 feedgenerator==1.9
 idna==2.8
 Jinja2==2.10.1
