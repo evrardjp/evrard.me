@@ -1,0 +1,34 @@
+baseURL: "http://evrard.me/"
+title: "dd if=/dev/brain of=/var/log/site"
+author: "Jean-Philippe Evrard"
+enableRobotsTXT: true
+languageCode: "en-us"
+theme: "hugo-flex"
+
+permalinks:
+  posts: "/:slug/"
+
+params:
+  color: "maroon"
+  schema: true
+  summaries: true
+  opengraph: true
+  twittercards: true
+  footer: 'Content on this site is licensed under a<br><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative Commons Attribution-ShareAlike 4.0 International License</a>'
+  #utterances:
+  #  enabled: false
+  #  repo:
+  #  issueterm:
+  #  theme:
+
+menu:
+  nav:
+  - name: About
+    url: pages/contact-me/
+    weight: 1
+  - name: ./history
+    url: posts/
+    weight: 2
+  - name: Tags
+    url: tags/
+    weight: 3
