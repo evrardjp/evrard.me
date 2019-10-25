@@ -1,7 +1,7 @@
 Title:  My YubiKey Quickstart guide
 Date: 2016-06-13 23:00
 Modified: 2016-06-15 00:30
-Tags: security
+Tags: hosting
 Status: published
 Summary: My YubiKey Quickstart guide - what you can do with yours/what do I do?
 

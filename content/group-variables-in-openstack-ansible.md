@@ -1,6 +1,6 @@
 Title: Group and host variables overriding in OpenStack-Ansible
 Date: 2017-08-15 17:28
-Tags: openstack-ansible, ansible
+Tags: openstack-ansible
 Status: published
 Summary: How to override group/host variables into OpenStack-Ansible
 

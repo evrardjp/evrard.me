@@ -2,7 +2,7 @@ Custom Inventories with OpenStack-Ansible
 #########################################
 
 :date: 2018-08-31
-:tags: ansible openstack-ansible
+:tags: ansible
 :status: published
 :summary: You can now easily bring your own OpenStack-Ansible inventory
 

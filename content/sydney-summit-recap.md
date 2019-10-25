@@ -1,6 +1,6 @@
 Title: OpenStack Summit Sydney Recap
 Date: 2017-11-19 18:00
-Tags: openstack, openstack-ansible
+Tags: openstack
 Status: published
 Summary: My personal view on the OpenStack Summit that happened in Sydney.
 
