@@ -8,7 +8,9 @@ the page if you want to contact me.
 
 I am also connected on:
 
-* irc (freenode.net), nick: evrardjp
-* Hangouts, same nick
-* Discord, contact me for the latest identifier
-* Steam, idem.
+* irc (freenode.net), nick: evrardjp.
+* Hangouts, evrardjp.
+* Discord, contact me for the latest identifier.
+* Steam, contact me for latest identifier.
+
+{{< contact >}}
