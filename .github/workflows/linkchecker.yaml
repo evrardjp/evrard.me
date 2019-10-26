@@ -1,0 +1,14 @@
+name: Hugo Link Checker
+on: pull_request
+
+jobs:
+  filter-to-pr-open-synced:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: linkcheck
+      uses: marccampbell/hugo-linkcheck-action@v0.1.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        HUGO_CONFIG: config.yaml
+        HUGO_FINAL_URL: https://evrard.me
