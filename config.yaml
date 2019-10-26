@@ -1,4 +1,4 @@
-baseURL: "http://evrard.me/"
+baseURL: /
 title: "dd if=/dev/brain of=/var/log/site"
 author: "Jean-Philippe Evrard"
 enableRobotsTXT: true
