@@ -1,4 +1,4 @@
-name: Hugo Link checker
+name: Website CI
 on: pull_request
 
 jobs:
