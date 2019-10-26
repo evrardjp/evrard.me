@@ -23,12 +23,12 @@ params:
 
 menu:
   nav:
-  - name: About
-    url: pages/contact-me/
-    weight: 1
   - name: ./history
     url: posts/
-    weight: 2
+    weight: 1
   - name: Tags
     url: tags/
+    weight: 2
+  - name: About
+    url: pages/contact-me/
     weight: 3
