@@ -1,0 +1,11 @@
+name: Hugo Link checker
+on: pull_request
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: "marccampbell/hugo-linkcheck-action@v0.1.3"
+      with:
+        HUGO_CONFIG: "./config.yaml"
+        HUGO_FINAL_URL: "https://evrard.me"
